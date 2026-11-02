@@ -100,41 +100,50 @@ footer {
     border-bottom: 1px solid #3a3a3a;
 }
 
-  /* Tablet and larger */
-  @media screen and (min-width: 768px) {
+/* Tablet and larger */
+@media screen and (min-width: 768px) {
 
-      /* Show nav inline in the header */
-      nav {
-          display: block;
-          position: relative;
-          box-shadow: none;
-          width: fit-content;
-          padding-right: 1rem;
-      }
+    /* Show nav inline in the header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
-      /* Menu items in a row */
-      #menu {
-          display: flex;
-      }
+    /* Menu items in a row */
+    #menu {
+        display: flex;
+    }
 
-      #menu li {
-          padding-left: 1rem;
-      }
+    #menu li {
+        padding-left: 1rem;
+    }
 
-      /* Hide the X toggle */
-      .nav-toggle-label {
-          display: none;
-      }
+    /* Hide the X toggle */
+    .nav-toggle-label {
+        display: none;
+    }
 
-      /* Bigger logo */
-      #logo {
-          font-size: 280%;
-          line-height: 75px;
-          margin: 0 0.5rem;
-      }
+    /* Bigger logo */
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 
-      /* Clear the taller header */
-      main {
-          margin-top: 79px;
-      }
-  }
+    /* Clear the taller header */
+    main {
+        margin-top: 79px;
+    }
+
+    /* Laptop and larger */
+    @media screen and (min-width: 992px) {
+
+        /* Underline menu links on hover */
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
+    }
+}
