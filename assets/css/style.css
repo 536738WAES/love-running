@@ -79,10 +79,20 @@ main {
     margin-top: 47px;
 }
 
-/* Footer (temporary colour) */
-footer {
-    background-color: lightpink;
-}
+  /* Footer social links */
+  #social-networks {
+      text-align: center;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+  }
+
+  #social-networks i {
+      font-size: 160%;
+      padding: 5%;
+      color: #3a3a3a;
+  }
 
 /* Nav menu */
 #menu {
