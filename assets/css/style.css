@@ -76,6 +76,7 @@ header a {
 main {
     flex: 1 0 auto;
     background-color: lightgreen;
+    margin-top: 47px;
 }
 
 /* Footer (temporary colour) */
