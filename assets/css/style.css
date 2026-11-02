@@ -39,32 +39,32 @@ header {
     align-items: baseline;
 }
 
-  /* Dropdown nav */
-  nav {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding: 0 1rem;
-      background-color: #ffffff;
-      box-shadow: 0 2px 10px #3a3a3a;
-      display: none;
-  }
+/* Dropdown nav */
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #3a3a3a;
+    display: none;
+}
 
-    /* Show nav when checkbox is ticked */
-  #nav-toggle:checked ~ nav {
-      display: block;
-  }
+/* Show nav when checkbox is ticked */
+#nav-toggle:checked~nav {
+    display: block;
+}
 
-  /* Hide the checkbox itself */
-  #nav-toggle {
-      display: none;
-  }
+/* Hide the checkbox itself */
+#nav-toggle {
+    display: none;
+}
 
-  /* Bigger tap target for the toggle */
-  .nav-toggle-label {
-      font-size: 150%;
-  }
+/* Bigger tap target for the toggle */
+.nav-toggle-label {
+    font-size: 150%;
+}
 
 /* Header links */
 header a {
@@ -99,3 +99,42 @@ footer {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+  /* Tablet and larger */
+  @media screen and (min-width: 768px) {
+
+      /* Show nav inline in the header */
+      nav {
+          display: block;
+          position: relative;
+          box-shadow: none;
+          width: fit-content;
+          padding-right: 1rem;
+      }
+
+      /* Menu items in a row */
+      #menu {
+          display: flex;
+      }
+
+      #menu li {
+          padding-left: 1rem;
+      }
+
+      /* Hide the X toggle */
+      .nav-toggle-label {
+          display: none;
+      }
+
+      /* Bigger logo */
+      #logo {
+          font-size: 280%;
+          line-height: 75px;
+          margin: 0 0.5rem;
+      }
+
+      /* Clear the taller header */
+      main {
+          margin-top: 79px;
+      }
+  }
