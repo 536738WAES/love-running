@@ -147,13 +147,13 @@ main {
     main {
         margin-top: 79px;
     }
+}
 
-    /* Laptop and larger */
-    @media screen and (min-width: 992px) {
+/* Laptop and larger */
+@media screen and (min-width: 992px) {
 
-        /* Underline menu links on hover */
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
+    /* Underline menu links on hover */
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
