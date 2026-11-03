@@ -133,6 +133,21 @@ hr {
     margin: 5px 0;
 }
 
+/* Benefits image */
+#benefits-image {
+    display: flex;
+    justify-content: center;
+}
+
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat center center / cover;
+    width: 80vw;
+    height: 80vw;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+
 /* Footer social links */
 #social-networks {
     text-align: center;
