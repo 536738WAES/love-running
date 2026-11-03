@@ -181,6 +181,28 @@ hr {
 
 /* Tablet and larger */
 @media screen and (min-width: 768px) {
+
+    /* Reasons layout */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental {
+        text-align: end;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-end;
+    }
+
     #hero {
         height: 600px;
     }
@@ -229,6 +251,33 @@ hr {
 
 /* Laptop and larger */
 @media screen and (min-width: 992px) {
+
+    /* Large desktop */
+    @media screen and (min-width: 1200px) {
+
+        /* Benefits side by side with image in the middle */
+        #benefits {
+            display: flex;
+            align-items: center;
+        }
+
+        #benefits-physical {
+            order: 1;
+        }
+
+        #benefits-image {
+            order: 2;
+        }
+
+        #benefits-mental {
+            order: 3;
+        }
+
+        #benefits-physical>div,
+        #benefits-mental>div {
+            width: 100%;
+        }
+    }
 
     /* Underline menu links on hover */
     #menu a:hover {
