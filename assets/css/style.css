@@ -229,42 +229,7 @@ hr {
 }
 
 /* Tablet and larger */
-#photos {
-    column-count: 3;
-}
-
 @media screen and (min-width: 768px) {
-
-    /* Reasons layout */
-    #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #benefits-physical>div,
-    #benefits-mental>div {
-        width: 75%;
-    }
-
-    #benefits-mental {
-        text-align: end;
-    }
-
-    #benefits-mental>div {
-        align-self: flex-end;
-    }
-
-    #hero {
-        height: 600px;
-    }
-
-    /* Narrower cover text on the right */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
 
     /* Show nav inline in the header */
     nav {
@@ -300,45 +265,81 @@ hr {
     main {
         margin-top: 79px;
     }
+
+    #hero {
+        height: 600px;
+    }
+
+    /* Narrower cover text on the right */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+    /* Reasons layout */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental {
+        text-align: end;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-end;
+    }
+
+    /* Gallery: 3 columns */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Laptop and larger */
-#photos {
-    column-count: 4;
-}
-
 @media screen and (min-width: 992px) {
-
-
-    /* Large desktop */
-    @media screen and (min-width: 1200px) {
-
-        /* Benefits side by side with image in the middle */
-        #benefits {
-            display: flex;
-            align-items: center;
-        }
-
-        #benefits-physical {
-            order: 1;
-        }
-
-        #benefits-image {
-            order: 2;
-        }
-
-        #benefits-mental {
-            order: 3;
-        }
-
-        #benefits-physical>div,
-        #benefits-mental>div {
-            width: 100%;
-        }
-    }
 
     /* Underline menu links on hover */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery: 4 columns */
+    #photos {
+        column-count: 4;
+    }
+}
+
+/* Large desktop */
+@media screen and (min-width: 1200px) {
+
+    /* Benefits side by side with image in the middle */
+    #benefits {
+        display: flex;
+        align-items: center;
+    }
+
+    #benefits-physical {
+        order: 1;
+    }
+
+    #benefits-image {
+        order: 2;
+    }
+
+    #benefits-mental {
+        order: 3;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 100%;
     }
 }
