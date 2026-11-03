@@ -148,6 +148,31 @@ hr {
     border-radius: 50%;
 }
 
+
+/* Meetup times */
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center center / cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times>div {
+    color: #fafafa;
+    /* Dark overlay for text contrast */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    /* Wrap to full width on narrow screens, grow to fill rows */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* White grid lines over the image */
+    border: 1px solid #ffffff;
+}
+
+#times h3 {
+    color: #fafafa;
+}
+
 /* Footer social links */
 #social-networks {
     text-align: center;
